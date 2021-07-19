@@ -1,0 +1,182 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    display:flex;
+    font-family: 'Neucha', cursive;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------------------------------------container-------------------------------------*/
+
+.container{
+    display:flex ;
+    width: 100%;
+    height: 100vh;
+    background-color:#fcd5ce;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------------------------------------section----------------------------------------*/
+
+section{
+    display: flex;
+    width: 50%;
+    height: 50vh;
+    background-color: #fcd5ce;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 0.08rem solid #fda191;
+}
+
+/*----------------------------------------article---------------------------------------*/
+
+article{
+    display: flex;
+    width: 95%;
+    height: 40%;
+}
+article textarea{
+    display: flex;
+    width: 100%;
+    background-color: #f8f1f0;
+    border-style: none;
+    outline: none;
+    font-family: 'Neucha', cursive;
+}
+
+
+/*------------------------------------------nav---------------------------------------------*/
+nav{
+    display: flex;
+    width: 95%;
+    height: 50%;
+    background-color: #fcd5ce;
+    justify-content: center;
+}
+.words{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    background-color: #fcd5ce;
+    flex-flow: column;
+    align-items: center;
+}
+
+.words_row-a,.words_row-b,.words_row-c,.words_row-d{
+    display: flex;
+    height: 25%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.words_row-a button,.words_row-b button,.words_row-c button{
+    display: flex;
+    width: 2.5rem;
+    height: 100%;
+    border-radius: 0.4rem;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border-style: none;
+    border-radius: 24px;
+    background: #fae1dd;
+    box-shadow:  5px 5px 11px #c1adaa,-5px -5px 11px #ffffff;
+    font-family: 'Neucha', cursive;
+}
+
+.words_row-a button:active,.words_row-b button:active,.words_row-c button:active,.space:active{
+    background-color: #f8cec5;
+}
+.space{
+    display: flex;
+    width: 14rem;
+    height: 90%;
+    border-radius: 0.4rem;
+    outline: none;
+    border-style: none;
+    border-radius: 24px;
+    background: #fae1dd;
+    box-shadow:  5px 5px 11px #c1adaa,-5px -5px 11px #ffffff;
+}
+
+/*------------------------------------------------------------*/
+
+.numbers{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    background-color:#fcd5ce;
+    flex-flow: column;
+    align-items: center;
+}
+
+.numbers_row-a,
+.numbers_row-b,
+.numbers_row-c,
+.numbers_row-d{
+    display: flex;
+    height: 25%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers_row-a button,.numbers_row-b button,.numbers_row-c button,.numbers_row-d button{
+    display: flex;
+    width: 2.5rem;
+    height: 100%;
+    border-radius: 0.4rem;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border-style: none;
+    border-radius: 24px;
+    background: #fae1dd;
+    box-shadow:  5px 5px 11px #c1adaa,-5px -5px 11px #ffffff;
+    font-family: 'Neucha', cursive;
+}
+
+.numbers_row-a button:active,.numbers_row-b button:active,.numbers_row-c button:active,.numbers_row-d button:active{
+    background-color: #f8cec5;
+}
