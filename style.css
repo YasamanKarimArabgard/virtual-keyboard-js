@@ -53,8 +53,13 @@ table {
     background-color:#fcd5ce;
     justify-content: center;
     align-items: center;
+    flex-flow: column;
 }
 
+h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
 /*----------------------------------------section----------------------------------------*/
 
 section{
@@ -82,6 +87,7 @@ article textarea{
     border-style: none;
     outline: none;
     font-family: 'Neucha', cursive;
+    font-size: 1.1rem;
 }
 
 
@@ -127,6 +133,11 @@ nav{
 
 .words_row-a button:active,.words_row-b button:active,.words_row-c button:active,.space:active{
     background-color: #f8cec5;
+   
+}
+
+.words_row-a button:hover,.words_row-b button:hover,.words_row-c button:hover,.words_row-d button:hover{
+     border:2.5px solid whitesmoke;
 }
 .space{
     display: flex;
@@ -179,4 +190,8 @@ nav{
 
 .numbers_row-a button:active,.numbers_row-b button:active,.numbers_row-c button:active,.numbers_row-d button:active{
     background-color: #f8cec5;
+}
+
+.numbers_row-a button:hover,.numbers_row-b button:hover,.numbers_row-c button:hover,.numbers_row-d button:hover{
+    border:2.5px solid whitesmoke;
 }

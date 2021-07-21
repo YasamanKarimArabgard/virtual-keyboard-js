@@ -13,73 +13,74 @@
     </head>
     <body>
         <div class="container">
+            <h1>virtual keyboard</h1>
             <section>
               <article>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="text_box" id="text_box" cols="30" rows="10" autofocus></textarea>
               </article>
             <nav>
                 <div class="words">
                     <div class="words_row-a">
-                        <button class="key"><span>Q</span></button>
-                        <button class="key"><span>W</span></button>
-                        <button class="key"><span>E</span></button>
-                        <button class="key"><span>R</span></button>
-                        <button class="key"><span>T</span></button>
-                        <button class="key"><span>Y</span></button>
-                        <button class="key"><span>U</span></button>
-                        <button class="key"><span>I</span></button>
-                        <button class="key"><span>O</span></button>
-                        <button class="key"><span>P</span></button>
-                        <button class="key key-md"><span class="fas fa-backspace"></span></button></div>
+                        <button class="key" value="q" onclick="add(value)"><span>Q</span></button>
+                        <button class="key" value="w" onclick="add(value)"><span>W</span></button>
+                        <button class="key" value="e" onclick="add(value)"><span>E</span></button>
+                        <button class="key" value="r" onclick="add(value)"><span>R</span></button>
+                        <button class="key" value="t" onclick="add(value)"><span>T</span></button>
+                        <button class="key" value="y" onclick="add(value)"><span>Y</span></button>
+                        <button class="key" value="u" onclick="add(value)"><span>U</span></button>
+                        <button class="key" value="i" onclick="add(value)"><span>I</span></button>
+                        <button class="key" value="o" onclick="add(value)"><span>o</span></button>
+                        <button class="key" value="p" onclick="add(value)"><span>P</span></button>
+                        <button class="key key-md" id="backspace" onclick="back()"><span class="fas fa-backspace"></span></button></div>
                     <div class="words_row-b">
-                        <button class="key"><span>A</span></button>
-                        <button class="key"><span>S</span></button>
-                        <button class="key"><span>D</span></button>
-                        <button class="key"><span>F</span></button>
-                        <button class="key"><span>G</span></button>
-                        <button class="key"><span>H</span></button>
-                        <button class="key"><span>J</span></button>
-                        <button class="key"><span>K</span></button>
-                        <button class="key"><span>L</span></button>
-                        <button class="key"><span>-</span></button>
+                        <button class="key" value="a" onclick="add(value)"><span>A</span></button>
+                        <button class="key" value="s" onclick="add(value)"><span>S</span></button>
+                        <button class="key" value="d" onclick="add(value)"><span>D</span></button>
+                        <button class="key" value="f" onclick="add(value)"><span>F</span></button>
+                        <button class="key" value="g" onclick="add(value)"><span>G</span></button>
+                        <button class="key" value="h" onclick="add(value)"><span>H</span></button>
+                        <button class="key" value="j" onclick="add(value)"><span>J</span></button>
+                        <button class="key" value="k" onclick="add(value)"><span>K</span></button>
+                        <button class="key" value="l" onclick="add(value)"><span>L</span></button>
+                        <button class="key" value="-" onclick="add(value)"><span>-</span></button>
                   
                     </div>
                     <div class="words_row-c">
-                        <button class="key"><span>Z</span></button>
-                        <button class="key"><span>X</span></button>
-                        <button class="key"><span>C</span></button>
-                        <button class="key"><span>V</span></button>
-                        <button class="key"><span>B</span></button>
-                        <button class="key"><span>N</span></button>
-                        <button class="key"><span>M</span></button>
-                        <button class="key key-lg"><span class="fas fa-level-down-alt fa-rotate-90"></span></button>
+                        <button class="key" value="z" onclick="add(value)"><span>Z</span></button>
+                        <button class="key" value="x" onclick="add(value)"><span>X</span></button>
+                        <button class="key" value="c" onclick="add(value)"><span>C</span></button>
+                        <button class="key" value="v" onclick="add(value)"><span>V</span></button>
+                        <button class="key" value="b" onclick="add(value)"><span>B</span></button>
+                        <button class="key" value="n" onclick="add(value)"><span>N</span></button>
+                        <button class="key" value="m" onclick="add(value)"><span>M</span></button>
                     </div>
                     <div class="words_row-d">
-                        <button class="space">
+                        <button class="space" onclick="space()">
                     </div>
                 </div> 
                 <div class="numbers">
                     <div class="numbers_row-a">
-                        <button class="key"><span>7</span></button>
-                        <button class="key"><span>8</span></button>
-                        <button class="key"><span>9</span></button>
+                        <button class="key" value="7" onclick="add(value)"><span>7</span></button>
+                        <button class="key" value="8" onclick="add(value)"><span>8</span></button>
+                        <button class="key" value="9" onclick="add(value)"><span>9</span></button>
                     </div>
                     <div class="numbers_row-b">
-                        <button class="key"><span>4</span></button>
-                        <button class="key"><span>5</span></button>
-                        <button class="key"><span>6</span></button>
+                        <button class="key" value="4" onclick="add(value)"><span>4</span></button>
+                        <button class="key" value="5" onclick="add(value)"><span>5</span></button>
+                        <button class="key" value="6" onclick="add(value)"<span>6</span></button>
                     </div>
                     <div class="numbers_row-c">
-                        <button class="key"><span>1</span></button>
-                        <button class="key"><span>2</span></button>
-                        <button class="key"><span>3</span></button></div>
+                        <button class="key" value="1" onclick="add(value)"><span>1</span></button>
+                        <button class="key" value="2" onclick="add(value)"><span>2</span></button>
+                        <button class="key" value="3" onclick="add(value)"><span>3</span></button></div>
                     <div class="numbers_row-d">
-                        <button class="key key-lg"><span>0</span>
+                        <button class="key key-lg" value="0" onclick="add(value)"><span>0</span>
                     </div>
                 </div>
                 
             </nav>
             </section>
         </div>
+        <script src="main.js"></script>
     </body>
     </html>
